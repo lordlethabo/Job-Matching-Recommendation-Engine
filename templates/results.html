@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Results</title></head>
+<body>
+    <h2>Top Job Matches</h2>
+
+    <ul>
+        {% for job in jobs %}
+        <li>
+            <b>{{ job.title }}</b> - {{ job.company }}  
+            <br>Match Score: {{ job.score }}
+            <br>Skills Matched: {{ job.skills }}
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
